@@ -5,22 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO Title & Description -->
-  <title>Instalaciones AXA | Climatización, Electricidad y Fontanería en Tarragona</title>
-  <meta name="description" content="Instalaciones AXA en Tarragona. Servicios profesionales de climatización, electricidad y fontanería.">
+  <title>Instalaciones AXA | Climatización, Refrigeración y Mantenimiento Técnico en Tarragona</title>
+  <meta name="description" content="Instalaciones AXA en Tarragona. Soluciones técnicas en climatización, refrigeración comercial y profesional, mantenimiento preventivo e instalaciones integrales.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://[DOMINIO-REAL]/">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Instalaciones AXA | Tarragona">
-  <meta property="og:description" content="Servicios de climatización, electricidad y fontanería.">
+  <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Instalaciones AXA | Climatización, Refrigeración y Mantenimiento">
+  <meta property="og:description" content="Soluciones técnicas para instalaciones que necesitan funcionar. Climatización, refrigeración, mantenimiento y asistencia en Tarragona.">
   <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:site_name" content="Instalaciones AXA">
+  <meta property="og:locale" content="es_ES">
 
-  <!-- Google Fonts: Figtree with system-font fallback -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Instalaciones AXA | Climatización, Refrigeración y Mantenimiento">
+  <meta name="twitter:description" content="Soluciones técnicas en climatización, refrigeración y mantenimiento profesional en Tarragona.">
+  <meta name="twitter:image" content="assets/images/og-image.jpg">
+
+  <!-- Google Fonts: Figtree -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- CSS3 Stylesheet -->
+  <!-- Corporate & Technical CSS3 Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Structured Data: Schema.org LocalBusiness with confirmed data only -->
@@ -29,6 +38,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Instalaciones AXA",
+    "description": "Instalación, mantenimiento y asistencia técnica para sistemas de climatización, refrigeración y soluciones profesionales.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rambla Nova 124",
@@ -42,38 +52,77 @@
 <body>
 
   <!-- =========================================================================
-       1. Header & Navigation
+       09 — Header Corporativo
        ========================================================================= -->
   <header class="site-header" id="site-header">
-    <div class="container navbar">
-      <a href="#inicio" class="brand" aria-label="Instalaciones AXA - Inicio">
-        <img src="assets/logo/logo-instalaciones-axa.svg" alt="Instalaciones AXA" width="240" height="42">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="#inicio" class="brand-wrap" aria-label="Instalaciones AXA - Inicio">
+        <img
+          src="assets/logo/logo-instalaciones-axa.svg"
+          alt="Instalaciones AXA"
+          width="240"
+          height="40"
+          class="brand-logo"
+        >
       </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Abrir menú"
-        aria-expanded="false"
-        aria-controls="main-navigation"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
+      <!-- Desktop Nav -->
+      <nav class="nav-main" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
+        <a href="#empresa">Empresa</a>
         <a href="#servicios">Servicios</a>
-        <a href="#por-que-axa">Nosotros</a>
-        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#refrigeracion" class="highlight-ref">Refrigeración</a>
+        <a href="#climatizacion">Climatización</a>
+        <a href="#mantenimiento">Mantenimiento</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#zonas">Zonas</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contacto" class="button button-primary">Solicitar presupuesto</a>
+        <a href="#contacto">Contacto</a>
       </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="#contacto" class="btn btn-primary header-cta-btn">
+          <span>Solicitar presupuesto</span>
+        </a>
+
+        <button
+          class="mobile-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-label="Menú móvil">
+    <a href="#inicio" class="mobile-link">Inicio</a>
+    <a href="#empresa" class="mobile-link">Empresa</a>
+    <a href="#servicios" class="mobile-link">Servicios</a>
+    <a href="#refrigeracion" class="mobile-link" style="color: var(--blue-primary);">Refrigeración</a>
+    <a href="#climatizacion" class="mobile-link">Climatización</a>
+    <a href="#mantenimiento" class="mobile-link">Mantenimiento</a>
+    <a href="#proyectos" class="mobile-link">Proyectos</a>
+    <a href="#contacto" class="mobile-link">Contacto</a>
+
+    <div class="mobile-drawer-footer">
+      <a href="#contacto" class="btn btn-primary mobile-link" style="width: 100%;">
+        <span>Solicitar presupuesto</span>
+      </a>
+      <a href="https://wa.me/?text=Hola%20Instalaciones%20AXA,%20solicito%20información%20técnica" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
 
   <!-- =========================================================================
        Main Content
@@ -81,817 +130,848 @@
   <main>
 
     <!-- =======================================================================
-         2. Hero Section
+         10 — Hero (Home)
          ======================================================================= -->
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">INSTALACIONES AXA · TARRAGONA</p>
+    <section class="hero-corp" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-corp-grid">
+        <div class="hero-corp-content reveal-item">
+          <span class="eyebrow-badge white">
+            INSTALACIONES · CLIMATIZACIÓN · REFRIGERACIÓN
+          </span>
 
-          <h1 id="hero-title">
-            Soluciones profesionales en climatización, electricidad y fontanería.
+          <h1 class="h1-hero hero-corp-h1" id="hero-title">
+            Soluciones técnicas para instalaciones que necesitan funcionar.
           </h1>
 
-          <p class="hero-description">
-            Servicios de climatización, electricidad y fontanería para hogares, comercios y espacios profesionales en Tarragona.
+          <p class="hero-corp-desc">
+            Instalación, mantenimiento y asistencia técnica para sistemas de climatización, refrigeración y soluciones profesionales en Tarragona.
           </p>
 
-          <div class="hero-actions">
-            <a href="#contacto" class="button button-primary">Solicitar presupuesto</a>
-            <a href="#servicios" class="button button-secondary">Ver servicios</a>
+          <div class="hero-actions-group">
+            <a href="#contacto" class="btn btn-accent">
+              <span>Solicitar presupuesto</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#servicios" class="btn btn-ghost-white">
+              <span>Ver servicios</span>
+            </a>
           </div>
 
-          <ul class="trust-list">
-            <li><span aria-hidden="true">✓</span> Climatización</li>
-            <li><span aria-hidden="true">✓</span> Electricidad</li>
-            <li><span aria-hidden="true">✓</span> Fontanería</li>
-            <li><span aria-hidden="true">✓</span> Tarragona</li>
-          </ul>
+          <div class="hero-trust-bar">
+            <span>Servicio profesional</span>
+            <span class="hero-trust-bullet" aria-hidden="true"></span>
+            <span>Atención personalizada</span>
+            <span class="hero-trust-bullet" aria-hidden="true"></span>
+            <span>Soluciones a medida</span>
+          </div>
         </div>
 
-        <div class="hero-media">
+        <div class="hero-corp-media reveal-item">
           <img
             src="assets/images/hero-instalaciones.jpg"
-            alt="Profesional realizando trabajos de instalación técnica"
+            alt="Técnico profesional realizando trabajos en instalación técnica"
             width="800"
-            height="480"
+            height="520"
             loading="eager"
           >
-          <div class="hero-badge">
-            <span class="hero-badge-dot" aria-hidden="true"></span>
-            <span>Tarragona, España</span>
+          <div class="hero-media-badge">
+            <div>
+              <strong>Instalaciones AXA · Sede Tarragona</strong>
+              <span>Rambla Nova 124, 43001 Tarragona</span>
+            </div>
+            <span class="badge-tag blue">Operativo</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- =======================================================================
-         3. Services Section & Interactive Selector
+         11 — Bloque de Servicios Destacados ("Soluciones técnicas para cada necesidad")
          ======================================================================= -->
-    <section class="section services-section section-surface" id="servicios" aria-labelledby="services-title">
+    <section class="section-pad" id="servicios" aria-labelledby="servicios-title">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Nuestros servicios</span>
-          <h2 id="services-title">¿En qué podemos ayudarte?</h2>
-          <p>Soluciones profesionales de climatización, electricidad y fontanería.</p>
+        <div class="section-header reveal-item">
+          <span class="eyebrow-badge">Capacidades operativas</span>
+          <h2 class="h2-section" id="servicios-title">
+            Soluciones técnicas para cada necesidad
+          </h2>
+          <p class="text-lead">
+            Diseño, montaje y mantenimiento especializado en climatización, frío industrial, infraestructura y asistencia técnica directa.
+          </p>
         </div>
 
-        <!-- 3 Primary Service Cards -->
-        <div class="services-overview reveal">
-          <!-- Climatización -->
-          <article class="service-card">
+        <div class="services-editorial-grid">
+          <!-- 01 Climatización -->
+          <article class="service-corp-card reveal-item">
             <div>
-              <div class="service-icon-box">
+              <div class="card-icon-tag">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14M12 6l-2-2m4 0l-2 2M12 18l-2 2m4 0l-2-2M6 12l-2-2m0 4l2-2M18 12l2-2m0 4l-2-2"/>
                 </svg>
               </div>
-              <h3>Climatización</h3>
-              <p class="service-card-text">
-                Soluciones de climatización adaptadas a las necesidades de cada espacio.
+              <span class="service-card-meta">01 / Especialidad</span>
+              <h3 class="h3-title">Climatización</h3>
+              <p class="service-card-desc">
+                Instalación, reparación y mantenimiento de sistemas de climatización y bomba de calor adaptados a viviendas, comercios y oficinas.
               </p>
             </div>
-            <button
-              type="button"
-              class="service-card-link"
-              data-scroll-to-service="climatizacion"
-            >
-              <span>Ver servicio</span>
+            <a href="#climatizacion" class="service-card-action">
+              <span>Ver detalles de climatización</span>
               <span aria-hidden="true">→</span>
-            </button>
+            </a>
           </article>
 
-          <!-- Electricidad -->
-          <article class="service-card">
+          <!-- 02 Refrigeración (Destacada) -->
+          <article class="service-corp-card featured-refrig reveal-item">
             <div>
-              <div class="service-icon-box">
+              <div class="card-icon-tag">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v18M5 7l14 10M19 7L5 17M8 4l4 4 4-4M8 20l4-4 4 4"/>
+                </svg>
+              </div>
+              <span class="service-card-meta" style="color: var(--blue-primary);">02 / Área Estratégica</span>
+              <h3 class="h3-title">Refrigeración</h3>
+              <p class="service-card-desc">
+                Soluciones para todo tipo de refrigeración: cámaras frigoríficas, frío comercial, conservación de producto y centrales de frío.
+              </p>
+            </div>
+            <a href="#refrigeracion" class="service-card-action">
+              <span>Explorar soluciones de refrigeración</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- 03 Mantenimiento -->
+          <article class="service-corp-card reveal-item">
+            <div>
+              <div class="card-icon-tag">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <span class="service-card-meta">03 / Continuidad</span>
+              <h3 class="h3-title">Mantenimiento</h3>
+              <p class="service-card-desc">
+                Mantenimiento preventivo y correctivo para mantener las instalaciones en su punto de máxima eficiencia y evitar paradas costosas.
+              </p>
+            </div>
+            <a href="#mantenimiento" class="service-card-action">
+              <span>Planes de mantenimiento</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- 04 Instalaciones -->
+          <article class="service-corp-card reveal-item">
+            <div>
+              <div class="card-icon-tag">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                   <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
                 </svg>
               </div>
-              <h3>Electricidad</h3>
-              <p class="service-card-text">
-                Servicios y soluciones eléctricas para viviendas, comercios y espacios profesionales.
+              <span class="service-card-meta">04 / Ejecución</span>
+              <h3 class="h3-title">Instalaciones</h3>
+              <p class="service-card-desc">
+                Instalaciones profesionales integrales en baja tensión, canalizaciones técnicas y redes de distribución con acabados limpios.
               </p>
             </div>
-            <button
-              type="button"
-              class="service-card-link"
-              data-scroll-to-service="electricidad"
-            >
-              <span>Ver servicio</span>
+            <a href="#contacto" class="service-card-action" data-set-service="instalaciones">
+              <span>Consultar instalación</span>
               <span aria-hidden="true">→</span>
-            </button>
+            </a>
           </article>
 
-          <!-- Fontanería -->
-          <article class="service-card">
+          <!-- 05 Reparación y Asistencia Técnica -->
+          <article class="service-corp-card reveal-item">
             <div>
-              <div class="service-icon-box">
+              <div class="card-icon-tag accent">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.09 3 12.25c0 2.22 1.8 4.05 4 4.05zM14 7c.7 0 1.3-.3 1.7-.8 1-1.2 1.3-2.3 1.3-3.2 0 0-1 .4-1.7.9-.7.6-1.3 1.6-1.3 2.1 0 .6.4 1 1 1zM17 19c1.7 0 3-1.3 3-3 0-.9-.4-1.7-1.3-2.4-.8-.7-1.3-1.8-1.7-2.6-.4.8-.9 1.9-1.7 2.6-.9.7-1.3 1.5-1.3 2.4 0 1.7 1.3 3 3 3z"/>
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
                 </svg>
               </div>
-              <h3>Fontanería</h3>
-              <p class="service-card-text">
-                Soluciones de fontanería para instalaciones, mantenimiento y necesidades del día a día.
+              <span class="service-card-meta" style="color: var(--accent-technical);">05 / Respuesta Técnica</span>
+              <h3 class="h3-title">Reparación y Asistencia</h3>
+              <p class="service-card-desc">
+                Diagnóstico técnico riguroso, localización de fugas, sustitución de componentes y reparación de incidencias y averías.
               </p>
             </div>
-            <button
-              type="button"
-              class="service-card-link"
-              data-scroll-to-service="fontaneria"
-            >
-              <span>Ver servicio</span>
+            <a href="#contacto" class="service-card-action" data-set-service="reparacion">
+              <span>Solicitar asistencia técnica</span>
               <span aria-hidden="true">→</span>
-            </button>
-          </article>
-        </div>
-
-        <!-- Interactive Service Selector -->
-        <div class="selector-box reveal">
-          <span class="eyebrow">Selección interactiva</span>
-          <h3>¿Qué necesitas?</h3>
-          <p style="color: var(--color-text-muted); font-size: 15px;">
-            Selecciona una especialidad para navegar a su información técnica detallada.
-          </p>
-
-          <div class="service-selector" role="tablist" aria-label="Seleccionar servicio">
-            <button
-              class="service-selector-card is-active"
-              type="button"
-              role="tab"
-              aria-selected="true"
-              data-service-target="climatizacion"
-            >
-              <span class="service-icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14M12 6l-2-2m4 0l-2 2M12 18l-2 2m4 0l-2-2M6 12l-2-2m0 4l2-2M18 12l2-2m0 4l-2-2"/>
-                </svg>
-              </span>
-              <span class="service-name">Climatización</span>
-              <span class="service-hint">Aire acondicionado y confort térmico</span>
-            </button>
-
-            <button
-              class="service-selector-card"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              data-service-target="electricidad"
-            >
-              <span class="service-icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                </svg>
-              </span>
-              <span class="service-name">Electricidad</span>
-              <span class="service-hint">Redes y cuadros eléctricos</span>
-            </button>
-
-            <button
-              class="service-selector-card"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              data-service-target="fontaneria"
-            >
-              <span class="service-icon" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.09 3 12.25c0 2.22 1.8 4.05 4 4.05zM14 7c.7 0 1.3-.3 1.7-.8 1-1.2 1.3-2.3 1.3-3.2 0 0-1 .4-1.7.9-.7.6-1.3 1.6-1.3 2.1 0 .6.4 1 1 1zM17 19c1.7 0 3-1.3 3-3 0-.9-.4-1.7-1.3-2.4-.8-.7-1.3-1.8-1.7-2.6-.4.8-.9 1.9-1.7 2.6-.9.7-1.3 1.5-1.3 2.4 0 1.7 1.3 3 3 3z"/>
-                </svg>
-              </span>
-              <span class="service-name">Fontanería</span>
-              <span class="service-hint">Redes hidrosanitarias</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Detailed Services -->
-        <div class="service-details-wrap">
-          <!-- Service 1: Climatización -->
-          <article class="service-detail-item reveal" id="climatizacion">
-            <div class="service-detail-grid">
-              <div class="service-detail-content">
-                <span class="eyebrow">Especialidad</span>
-                <h2>Climatización</h2>
-                <p>
-                  Soluciones de climatización adaptadas a las necesidades de cada espacio. Instalación, mantenimiento y adecuación de equipos de aire acondicionado y bombas de calor para viviendas, comercios y oficinas en Tarragona.
-                </p>
-
-                <ul class="service-features">
-                  <li><span aria-hidden="true">✓</span> Instalación de equipos de aire acondicionado y bomba de calor</li>
-                  <li><span aria-hidden="true">✓</span> Mantenimiento técnico y revisión de sistemas existentes</li>
-                  <li><span aria-hidden="true">✓</span> Estudio y dimensionamiento de las necesidades térmicas</li>
-                  <li><span aria-hidden="true">✓</span> Optimización del confort ambiental y rendimiento de la instalación</li>
-                </ul>
-
-                <button
-                  type="button"
-                  class="button button-primary"
-                  data-prefill-service="climatizacion"
-                >
-                  Solicitar presupuesto para Climatización
-                </button>
-              </div>
-
-              <div class="service-detail-media">
-                <img
-                  src="assets/images/climatizacion.jpg"
-                  alt="Instalación de unidad interior de climatización"
-                  loading="lazy"
-                  width="600"
-                  height="450"
-                >
-              </div>
-            </div>
+            </a>
           </article>
 
-          <!-- Service 2: Electricidad -->
-          <article class="service-detail-item reveal" id="electricidad">
-            <div class="service-detail-grid reverse">
-              <div class="service-detail-content">
-                <span class="eyebrow">Especialidad</span>
-                <h2>Electricidad</h2>
-                <p>
-                  Servicios y soluciones eléctricas para viviendas, comercios y espacios profesionales. Instalaciones diseñadas con rigor técnico y máxima seguridad según las normativas vigentes.
-                </p>
-
-                <ul class="service-features">
-                  <li><span aria-hidden="true">✓</span> Montaje y adecuación de cuadros eléctricos de distribución</li>
-                  <li><span aria-hidden="true">✓</span> Instalaciones eléctricas para reformas y obra nueva</li>
-                  <li><span aria-hidden="true">✓</span> Distribución de circuitos, mecanismos e iluminación técnica</li>
-                  <li><span aria-hidden="true">✓</span> Revisión, saneamiento y mantenimiento de redes eléctricas</li>
-                </ul>
-
-                <button
-                  type="button"
-                  class="button button-primary"
-                  data-prefill-service="electricidad"
-                >
-                  Solicitar presupuesto para Electricidad
-                </button>
+          <!-- 06 Soluciones Técnicas -->
+          <article class="service-corp-card reveal-item">
+            <div>
+              <div class="card-icon-tag">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
               </div>
-
-              <div class="service-detail-media">
-                <img
-                  src="assets/images/electricidad.jpg"
-                  alt="Cuadro de distribución eléctrica profesional"
-                  loading="lazy"
-                  width="600"
-                  height="450"
-                >
-              </div>
+              <span class="service-card-meta">06 / Proyectos a Medida</span>
+              <h3 class="h3-title">Soluciones Técnicas</h3>
+              <p class="service-card-desc">
+                Diseño, cálculo y ejecución de soluciones adaptadas a las particularidades estructurales y operativas de cada instalación.
+              </p>
             </div>
-          </article>
-
-          <!-- Service 3: Fontanería -->
-          <article class="service-detail-item reveal" id="fontaneria">
-            <div class="service-detail-grid">
-              <div class="service-detail-content">
-                <span class="eyebrow">Especialidad</span>
-                <h2>Fontanería</h2>
-                <p>
-                  Soluciones de fontanería para instalaciones, mantenimiento y necesidades del día a día. Montaje de redes de distribución de agua y saneamiento con materiales de alta durabilidad y ejecución limpia.
-                </p>
-
-                <ul class="service-features">
-                  <li><span aria-hidden="true">✓</span> Redes de distribución de agua sanitaria fría y caliente</li>
-                  <li><span aria-hidden="true">✓</span> Instalación y conexión de sanitarios y valvulería técnica</li>
-                  <li><span aria-hidden="true">✓</span> Colectores de distribución y regulación de presión</li>
-                  <li><span aria-hidden="true">✓</span> Mantenimiento de tuberías, desagües y canalizaciones</li>
-                </ul>
-
-                <button
-                  type="button"
-                  class="button button-primary"
-                  data-prefill-service="fontaneria"
-                >
-                  Solicitar presupuesto para Fontanería
-                </button>
-              </div>
-
-              <div class="service-detail-media">
-                <img
-                  src="assets/images/fontaneria.jpg"
-                  alt="Instalación de colectores de fontanería y tuberías"
-                  loading="lazy"
-                  width="600"
-                  height="450"
-                >
-              </div>
-            </div>
+            <a href="#contacto" class="service-card-action" data-set-service="soluciones-tecnicas">
+              <span>Estudio de proyecto</span>
+              <span aria-hidden="true">→</span>
+            </a>
           </article>
         </div>
       </div>
     </section>
 
     <!-- =======================================================================
-         4. Why AXA Section
+         12 — Sección Especial: REFRIGERACIÓN (Gran protagonismo)
          ======================================================================= -->
-    <section class="section" id="por-que-axa" aria-labelledby="why-title">
+    <section class="refrigeracion-section" id="refrigeracion" aria-labelledby="refrigeracion-title">
+      <div class="container refrigeracion-grid">
+        <div class="reveal-item">
+          <span class="eyebrow-badge white">Área de Alta Especialización</span>
+          <h2 class="h2-section refrigeracion-h2" id="refrigeracion-title">
+            Soluciones para todo tipo de Refrigeración
+          </h2>
+          <p class="refrigeracion-lead">
+            Instalaciones AXA trabaja con diferentes necesidades y aplicaciones de refrigeración, asegurando la cadena de frío, la conservación óptima del producto y la continuidad operativa de su negocio.
+          </p>
+
+          <div class="refrigeracion-apps-list">
+            <div class="refrigeracion-app-item">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Refrigeración comercial</span>
+            </div>
+            <div class="refrigeracion-app-item">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Refrigeración profesional</span>
+            </div>
+            <div class="refrigeracion-app-item">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Cámaras frigoríficas</span>
+            </div>
+            <div class="refrigeracion-app-item">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Conservación de productos</span>
+            </div>
+            <div class="refrigeracion-app-item">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Equipos de frío</span>
+            </div>
+            <div class="refrigeracion-app-item">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Sistemas de refrigeración</span>
+            </div>
+            <div class="refrigeracion-app-item" style="grid-column: span 1 / -1;">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Mantenimiento y revisión de instalaciones frigoríficas</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#contacto" class="btn btn-accent" data-set-service="refrigeracion">
+              <span>Consultar solución frigorífica</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#contacto" class="btn btn-ghost-white">
+              <span>Solicitar presupuesto</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="refrigeracion-media-wrap reveal-item">
+          <img
+            src="assets/images/refrigeracion.jpg"
+            alt="Instalación de sistema de refrigeración y cámaras de frío en Tarragona"
+            width="800"
+            height="500"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Climatización en Profundidad
+         ======================================================================= -->
+    <section class="section-pad bg-grey-subtle" id="climatizacion" aria-labelledby="clima-title">
+      <div class="container climatizacion-grid">
+        <div class="climatizacion-media reveal-item">
+          <img
+            src="assets/images/climatizacion.jpg"
+            alt="Instalación técnica de climatización y aire acondicionado"
+            width="800"
+            height="500"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="reveal-item">
+          <span class="eyebrow-badge">Confort & Eficiencia Energética</span>
+          <h2 class="h2-section" id="clima-title">
+            Climatización eficiente y duradera
+          </h2>
+          <p class="text-lead">
+            Instalamos y mantenemos equipos de aire acondicionado y bomba de calor adaptados a los requerimientos térmicos y espaciales de cada inmueble.
+          </p>
+
+          <ul class="feature-check-list">
+            <li class="feature-check-item">
+              <div class="feature-check-icon">
+                <svg class="icon" viewBox="0 0 24 24" style="width: 14px; height: 14px;" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <div class="feature-check-text">
+                <strong>Dimensionamiento preciso de cargas</strong>
+                <span>Cálculo para garantizar temperatura de consigna y bajo consumo.</span>
+              </div>
+            </li>
+            <li class="feature-check-item">
+              <div class="feature-check-icon">
+                <svg class="icon" viewBox="0 0 24 24" style="width: 14px; height: 14px;" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <div class="feature-check-text">
+                <strong>Sistemas Split, Multi-Split y Conductos</strong>
+                <span>Soluciones discretas para viviendas particulares y espacios comerciales.</span>
+              </div>
+            </li>
+            <li class="feature-check-item">
+              <div class="feature-check-icon">
+                <svg class="icon" viewBox="0 0 24 24" style="width: 14px; height: 14px;" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <div class="feature-check-text">
+                <strong>Revisión periódica de refrigerante y filtros</strong>
+                <span>Mantenimiento preventivo que alarga la vida útil de los compresores.</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#contacto" class="btn btn-primary" data-set-service="climatizacion">
+            <span>Presupuesto de climatización</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         13 — Sección MANTENIMIENTO ("Mantenimiento que evita problemas.")
+         ======================================================================= -->
+    <section class="section-pad" id="mantenimiento" aria-labelledby="mantenimiento-title">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Nuestra filosofía</span>
-          <h2 id="why-title">Una solución profesional para cada instalación.</h2>
-          <p>
-            Criterio técnico riguroso, cercanía y una clara orientación hacia el trabajo bien hecho.
+        <div class="section-header reveal-item">
+          <span class="eyebrow-badge">Continuidad Operativa</span>
+          <h2 class="h2-section" id="mantenimiento-title">
+            Mantenimiento que evita problemas.
+          </h2>
+          <p class="text-lead">
+            Una avería inesperada en climatización o refrigeración paraliza la actividad y genera sobrecostes. Nuestro servicio de mantenimiento protege su inversión y anticipa cualquier fallo.
           </p>
         </div>
 
-        <div class="why-grid reveal">
-          <div class="why-card">
+        <div class="mantenimiento-cards-grid">
+          <!-- Preventivo -->
+          <article class="mantenimiento-card reveal-item">
             <div>
-              <div class="why-card-top">
-                <span class="why-number">01</span>
-                <div class="why-icon">
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM19 8v6M22 11h-6"/>
-                  </svg>
-                </div>
-              </div>
-              <h3>Atención personalizada</h3>
+              <span class="mantenimiento-pill">Programado</span>
+              <h3 class="mantenimiento-card-h3">Mantenimiento preventivo</h3>
               <p>
-                Escuchamos tus necesidades concretas para ofrecer una respuesta adaptada y directa, con un trato claro y profesional en cada fase.
+                Revisiones periódicas sistemáticas para detectar desgaste, verificar presiones, consumos eléctricos y estanqueidad antes de que provoquen una avería.
               </p>
             </div>
-            <div class="why-card-footer">Instalaciones AXA</div>
-          </div>
-
-          <div class="why-card">
-            <div>
-              <div class="why-card-top">
-                <span class="why-number">02</span>
-                <div class="why-icon">
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <line x1="4" y1="21" x2="4" y2="14"/>
-                    <line x1="4" y1="10" x2="4" y2="3"/>
-                    <line x1="12" y1="21" x2="12" y2="12"/>
-                    <line x1="12" y1="8" x2="12" y2="3"/>
-                    <line x1="20" y1="21" x2="20" y2="16"/>
-                    <line x1="20" y1="12" x2="20" y2="3"/>
-                    <line x1="1" y1="14" x2="7" y2="14"/>
-                    <line x1="9" y1="8" x2="15" y2="8"/>
-                    <line x1="17" y1="16" x2="23" y2="16"/>
-                  </svg>
-                </div>
-              </div>
-              <h3>Soluciones adaptadas</h3>
-              <p>
-                Cada vivienda, local o instalación presenta condiciones únicas. Estudiamos las particularidades del espacio para garantizar el mejor resultado.
-              </p>
-            </div>
-            <div class="why-card-footer">Instalaciones AXA</div>
-          </div>
-
-          <div class="why-card">
-            <div>
-              <div class="why-card-top">
-                <span class="why-number">03</span>
-                <div class="why-icon">
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    <polyline points="9 12 11 14 15 10"/>
-                  </svg>
-                </div>
-              </div>
-              <h3>Especialización técnica</h3>
-              <p>
-                Criterio técnico riguroso en climatización, electricidad y fontanería, cuidando los estándares de seguridad y la calidad de los acabados.
-              </p>
-            </div>
-            <div class="why-card-footer">Instalaciones AXA</div>
-          </div>
-
-          <div class="why-card">
-            <div>
-              <div class="why-card-top">
-                <span class="why-number">04</span>
-                <div class="why-icon">
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                    <circle cx="12" cy="10" r="3"/>
-                  </svg>
-                </div>
-              </div>
-              <h3>Servicio cercano en Tarragona</h3>
-              <p>
-                Presencia e implicación directa en Tarragona, facilitando la comunicación constante y el seguimiento de cada intervención.
-              </p>
-            </div>
-            <div class="why-card-footer">Instalaciones AXA</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         5. Process (Cómo trabajamos)
-         ======================================================================= -->
-    <section class="section section-surface" id="proceso" aria-labelledby="process-title">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Metodología</span>
-          <h2 id="process-title">Cómo trabajamos</h2>
-          <p>Un proceso estructurado y transparente desde la primera toma de contacto hasta la finalización.</p>
-        </div>
-
-        <div class="process-grid reveal">
-          <div class="process-card">
-            <div>
-              <div class="process-card-top">
-                <span class="process-number">01</span>
-                <div class="process-icon">
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                  </svg>
-                </div>
-              </div>
-              <h3>Cuéntanos qué necesitas</h3>
-              <p>Contacta con Instalaciones AXA y explícanos qué necesitas.</p>
-            </div>
-            <div class="process-card-footer">Paso 1 de 4</div>
-          </div>
-
-          <div class="process-card">
-            <div>
-              <div class="process-card-top">
-                <span class="process-number">02</span>
-                <div class="process-icon">
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M9 11l3 3L22 4"/>
-                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-                  </svg>
-                </div>
-              </div>
-              <h3>Valoramos la instalación</h3>
-              <p>Analizamos las necesidades del trabajo y buscamos la solución adecuada.</p>
-            </div>
-            <div class="process-card-footer">Paso 2 de 4</div>
-          </div>
-
-          <div class="process-card">
-            <div>
-              <div class="process-card-top">
-                <span class="process-number">03</span>
-                <div class="process-icon">
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                    <polyline points="14 2 14 8 20 8"/>
-                    <line x1="16" y1="13" x2="8" y2="13"/>
-                    <line x1="16" y1="17" x2="8" y2="17"/>
-                  </svg>
-                </div>
-              </div>
-              <h3>Te presentamos la solución</h3>
-              <p>Te explicamos el trabajo necesario antes de realizarlo.</p>
-            </div>
-            <div class="process-card-footer">Paso 3 de 4</div>
-          </div>
-
-          <div class="process-card">
-            <div>
-              <div class="process-card-top">
-                <span class="process-number">04</span>
-                <div class="process-icon">
-                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                  </svg>
-                </div>
-              </div>
-              <h3>Realizamos el trabajo</h3>
-              <p>Ejecutamos la instalación o servicio acordado con limpieza y precisión.</p>
-            </div>
-            <div class="process-card-footer">Paso 4 de 4</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         6. Projects Gallery
-         ======================================================================= -->
-    <section class="section" id="proyectos" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Portfolio</span>
-          <h2 id="projects-title">Nuestros trabajos</h2>
-          <p>Una selección visual de trabajos e instalaciones realizados por Instalaciones AXA.</p>
-        </div>
-
-        <div class="gallery-filters reveal">
-          <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
-          <button class="filter-button" type="button" data-filter="climatizacion" aria-pressed="false">Climatización</button>
-          <button class="filter-button" type="button" data-filter="electricidad" aria-pressed="false">Electricidad</button>
-          <button class="filter-button" type="button" data-filter="fontaneria" aria-pressed="false">Fontanería</button>
-        </div>
-
-        <div class="projects-grid reveal">
-          <article class="project-card" data-category="climatizacion">
-            <div class="project-media">
-              <img src="assets/images/climatizacion.jpg" alt="Instalación de sistema de climatización split" loading="lazy">
-              <span class="project-badge">Tarragona</span>
-            </div>
-            <div class="project-info">
-              <div>
-                <h3>Instalación de Climatización</h3>
-                <p>Montaje y puesta a punto de sistema split en vivienda.</p>
-              </div>
-              <div class="project-info-footer">
-                <strong>Climatización</strong>
-                <span>Tarragona</span>
-              </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--grey-border);">
+              <span style="font-size: 13px; font-weight: 700; color: var(--blue-primary);">Máximo rendimiento constante</span>
             </div>
           </article>
 
-          <article class="project-card" data-category="electricidad">
-            <div class="project-media">
-              <img src="assets/images/electricidad.jpg" alt="Montaje de cuadro de distribución eléctrica" loading="lazy">
-              <span class="project-badge">Tarragona</span>
+          <!-- Correctivo -->
+          <article class="mantenimiento-card urgent reveal-item">
+            <div>
+              <span class="mantenimiento-pill urgent">Resolutivo</span>
+              <h3 class="mantenimiento-card-h3">Mantenimiento correctivo</h3>
+              <p>
+                Intervención ágil y profesional ante paradas o fallos de funcionamiento en equipos de climatización, frío y cuadros eléctricos para restablecer el servicio.
+              </p>
             </div>
-            <div class="project-info">
-              <div>
-                <h3>Cuadro de Distribución</h3>
-                <p>Distribución de circuitos con protecciones magnetotérmicas.</p>
-              </div>
-              <div class="project-info-footer">
-                <strong>Electricidad</strong>
-                <span>Tarragona</span>
-              </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--grey-border);">
+              <span style="font-size: 13px; font-weight: 700; color: var(--accent-technical);">Respuesta ante incidencias</span>
             </div>
           </article>
 
-          <article class="project-card" data-category="fontaneria">
-            <div class="project-media">
-              <img src="assets/images/fontaneria.jpg" alt="Colectores y valvulería de fontanería" loading="lazy">
-              <span class="project-badge">Tarragona</span>
+          <!-- Asistencia Técnica -->
+          <article class="mantenimiento-card reveal-item">
+            <div>
+              <span class="mantenimiento-pill">Especializado</span>
+              <h3 class="mantenimiento-card-h3">Asistencia técnica</h3>
+              <p>
+                Atención profesional directa para diagnosticar anomalías, asesorar técnicamente y optimizar los parámetros de funcionamiento de la instalación.
+              </p>
             </div>
-            <div class="project-info">
-              <div>
-                <h3>Red y Colectores Hidrosanitarios</h3>
-                <p>Distribución de red técnica de agua y valvulería.</p>
-              </div>
-              <div class="project-info-footer">
-                <strong>Fontanería</strong>
-                <span>Tarragona</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="climatizacion">
-            <div class="project-media">
-              <img src="assets/images/proyecto-exterior.jpg" alt="Instalación de unidades condensadoras de climatización" loading="lazy">
-              <span class="project-badge">Tarragona</span>
-            </div>
-            <div class="project-info">
-              <div>
-                <h3>Unidades Exteriores de Clima</h3>
-                <p>Montaje de condensadoras exteriores sobre soporte antivibratorio.</p>
-              </div>
-              <div class="project-info-footer">
-                <strong>Climatización</strong>
-                <span>Tarragona</span>
-              </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--grey-border);">
+              <span style="font-size: 13px; font-weight: 700; color: var(--blue-primary);">Interlocución técnica experta</span>
             </div>
           </article>
         </div>
-      </div>
-    </section>
 
-    <!-- =======================================================================
-         7. Service Area
-         ======================================================================= -->
-    <section class="section section-surface" id="zonas" aria-labelledby="zones-title">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Ubicación y cobertura</span>
-          <h2 id="zones-title">Trabajamos en Tarragona</h2>
-          <p>Servicio profesional y cercano para instalaciones residenciales y comerciales.</p>
-        </div>
-
-        <div class="service-area-grid reveal">
-          <div class="area-info-card">
-            <span class="eyebrow">Sede operativa</span>
-            <h3>Instalaciones AXA en Tarragona</h3>
-            <p>
-              Ubicados en el eje neurálgico de la ciudad, en Rambla Nova 124. Desde esta localización prestamos cobertura integral en climatización, electricidad y fontanería para el término de Tarragona.
+        <!-- Banner Mantenimiento con foto técnica -->
+        <div class="mantenimiento-banner reveal-item">
+          <div class="mantenimiento-banner-content">
+            <span class="eyebrow-badge white">Servicio Técnico Cualificado</span>
+            <h3 class="h3-title" style="color: var(--white); font-size: 26px; margin-bottom: 1rem;">
+              Equipos de diagnóstico de precisión y técnicos cualificados
+            </h3>
+            <p style="color: #CBD5E1; font-size: 16px; margin-bottom: 2rem;">
+              Utilizamos manómetros digitales, detectores de fugas certificados y comprobadores de aislamiento para asegurar intervenciones contrastadas en Tarragona.
             </p>
-
-            <div class="address-block">
-              <div class="address-icon">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <polygon points="3 11 22 2 13 21 11 13 3 11"/>
-                </svg>
-              </div>
-              <div>
-                <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); font-weight: 700; margin-bottom: 4px;">
-                  Dirección postal
-                </p>
-                <p style="font-size: 17px; font-weight: 700; color: var(--color-text); margin: 0;">
-                  Rambla Nova 124
-                </p>
-                <p style="font-size: 15px; color: var(--color-text-muted); margin: 0;">
-                  43001 Tarragona, España
-                </p>
-              </div>
-            </div>
+            <a href="#contacto" class="btn btn-accent" data-set-service="mantenimiento">
+              <span>Consultar planes de mantenimiento</span>
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
-
-          <div class="area-map-card">
-            <div class="map-card-top">
-              <span>Área de cobertura activa</span>
-              <span>43001 Tarragona</span>
-            </div>
-
-            <div class="map-card-center">
-              <div class="pin-icon-wrap">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
-                </svg>
-              </div>
-              <div class="pin-label">
-                <strong>Rambla Nova 124</strong>
-                <span>Tarragona, España</span>
-              </div>
-            </div>
-
-            <div class="map-card-bottom">
-              <span>Especialidad técnica local</span>
-              <strong>Climatización · Electricidad · Fontanería</strong>
-            </div>
+          <div class="mantenimiento-banner-media">
+            <img
+              src="assets/images/mantenimiento.jpg"
+              alt="Técnico especialista de Instalaciones AXA realizando revisión con manómetros"
+              width="600"
+              height="360"
+              loading="lazy"
+            >
           </div>
         </div>
       </div>
     </section>
 
     <!-- =======================================================================
-         8. FAQ (Preguntas Frecuentes)
+         14 — Sección "Por qué Instalaciones AXA"
          ======================================================================= -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
+    <section class="section-pad bg-grey-subtle" id="empresa" aria-labelledby="why-title">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Dudas habituales</span>
-          <h2 id="faq-title">Preguntas frecuentes</h2>
-          <p>Respuestas a las preguntas más habituales sobre nuestros servicios e instalaciones.</p>
+        <div class="section-header center reveal-item">
+          <span class="eyebrow-badge">Valores operativos</span>
+          <h2 class="h2-section" id="why-title">
+            Por qué elegir Instalaciones AXA
+          </h2>
+          <p class="text-lead">
+            Argumentos técnicos y profesionales contrastados para confiar la instalación y mantenimiento de su espacio.
+          </p>
         </div>
 
-        <div class="faq-list reveal">
-          <details class="faq-item">
-            <summary>
-              <span>¿Qué servicios ofrece Instalaciones AXA?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <polyline points="6 9 12 15 18 9"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq-answer">
-              <p>Instalaciones AXA está especializada en climatización, electricidad y fontanería.</p>
-            </div>
-          </details>
+        <div class="why-axa-grid">
+          <div class="why-axa-card reveal-item">
+            <span class="why-axa-num">01</span>
+            <h3>Soluciones adaptadas</h3>
+            <p>
+              Cada instalación tiene necesidades térmicas, eléctricas o de frío singulares. No aplicamos recetas genéricas: estudiamos su espacio antes de proponer.
+            </p>
+          </div>
 
-          <details class="faq-item">
-            <summary>
-              <span>¿Dónde está Instalaciones AXA?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <polyline points="6 9 12 15 18 9"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq-answer">
-              <p>Instalaciones AXA está ubicada en Rambla Nova 124, 43001 Tarragona.</p>
-            </div>
-          </details>
+          <div class="why-axa-card reveal-item">
+            <span class="why-axa-num">02</span>
+            <h3>Enfoque técnico riguroso</h3>
+            <p>
+              Analizamos a fondo acometidas, consumos y trazados. La ingeniería de cada solución se calcula para cumplir la normativa y durar muchos años.
+            </p>
+          </div>
 
-          <details class="faq-item">
-            <summary>
-              <span>¿Cómo puedo solicitar información?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <polyline points="6 9 12 15 18 9"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq-answer">
-              <p>Puedes contactar con Instalaciones AXA mediante los canales de contacto disponibles en la web.</p>
-            </div>
-          </details>
+          <div class="why-axa-card reveal-item">
+            <span class="why-axa-num">03</span>
+            <h3>Mantenimiento que suma</h3>
+            <p>
+              No solamente instalamos equipos: ayudamos activamente a mantenerlos en condiciones óptimas para prolongar su rendimiento y reducir consumos.
+            </p>
+          </div>
+
+          <div class="why-axa-card reveal-item">
+            <span class="why-axa-num">04</span>
+            <h3>Atención directa y cercana</h3>
+            <p>
+              Comunicación clara sin intermediarios burocráticos. Trato directo con el responsable de su instalación para resolver cualquier consulta en Tarragona.
+            </p>
+          </div>
+
+          <div class="why-axa-card reveal-item">
+            <span class="why-axa-num">05</span>
+            <h3>Servicio integral completo</h3>
+            <p>
+              Cubrimos el ciclo de vida completo: instalación, puesta en marcha, mantenimiento preventivo, reparación y asistencia técnica continuada.
+            </p>
+          </div>
+
+          <div class="why-axa-card reveal-item">
+            <span class="why-axa-num">06</span>
+            <h3>Compromiso y respuesta</h3>
+            <p>
+              Disponibilidad operativa y seriedad en los plazos acordados. Nuestra reputación técnica en Tarragona se basa en el trabajo bien ejecutado.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- =======================================================================
-         9. Contact Section
+         15 — Proceso de Trabajo ("Así trabajamos")
          ======================================================================= -->
-    <section class="section section-surface" id="contacto" aria-labelledby="contact-title">
+    <section class="section-pad" aria-labelledby="process-title">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Contacto</span>
-          <h2 id="contact-title">¿Necesitas una instalación?</h2>
-          <p>Cuéntanos qué necesitas y nos pondremos en contacto contigo.</p>
+        <div class="section-header reveal-item">
+          <span class="eyebrow-badge">Metodología contrastada</span>
+          <h2 class="h2-section" id="process-title">
+            Así trabajamos
+          </h2>
+          <p class="text-lead">
+            Un proceso estructurado en 5 etapas claras para garantizar solvencia, presupuesto transparente y ejecución profesional.
+          </p>
         </div>
 
-        <div class="contact-grid reveal">
-          <!-- Information Card -->
-          <aside class="contact-info-card" aria-label="Información de contacto">
+        <div class="process-steps-track">
+          <div class="process-step-item reveal-item">
+            <span class="step-num-big">01</span>
             <div>
-              <span class="eyebrow">Instalaciones AXA</span>
-              <h3>Atención en Tarragona</h3>
-              <p style="color: var(--color-text-muted); font-size: 15px; margin: 0;">
-                Servicio profesional de climatización, electricidad y fontanería.
-              </p>
+              <h3>Analizamos</h3>
+              <p>Conocemos en profundidad las necesidades reales de la instalación y las demandas del espacio.</p>
             </div>
+          </div>
 
-            <div class="contact-info-item">
-              <div class="contact-info-icon">
+          <div class="process-step-item reveal-item">
+            <span class="step-num-big">02</span>
+            <div>
+              <h3>Proponemos</h3>
+              <p>Definimos la solución técnica más adecuada con presupuesto detallado y sin sorpresas.</p>
+            </div>
+          </div>
+
+          <div class="process-step-item reveal-item">
+            <span class="step-num-big">03</span>
+            <div>
+              <h3>Instalamos</h3>
+              <p>Realizamos el trabajo con criterios profesionales, limpieza en la obra y materiales certificados.</p>
+            </div>
+          </div>
+
+          <div class="process-step-item reveal-item">
+            <span class="step-num-big">04</span>
+            <div>
+              <h3>Mantenemos</h3>
+              <p>Ayudamos a conservar el rendimiento y la eficiencia energética de la instalación en el tiempo.</p>
+            </div>
+          </div>
+
+          <div class="process-step-item reveal-item">
+            <span class="step-num-big">05</span>
+            <div>
+              <h3>Respondemos</h3>
+              <p>Estamos disponibles ante incidencias, ajustes o ampliaciones futuras en su instalación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         16 — Proyectos (Galería Profesional)
+         ======================================================================= -->
+    <section class="section-pad bg-grey-subtle" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="eyebrow-badge">Trabajos realizados</span>
+          <h2 class="h2-section" id="proyectos-title">
+            Proyectos y soluciones técnicas
+          </h2>
+          <p class="text-lead">
+            Selección visual de trabajos desarrollados por Instalaciones AXA en climatización, refrigeración, mantenimiento e infraestructura técnica.
+          </p>
+        </div>
+
+        <div class="projects-gallery-grid">
+          <!-- Proj 1 -->
+          <article class="project-corp-card reveal-item">
+            <div class="project-thumb-box">
+              <img
+                src="assets/images/climatizacion.jpg"
+                alt="Instalación de sistema split de climatización en Tarragona"
+                width="600"
+                height="450"
+                loading="lazy"
+              >
+              <span class="project-badge-tag">Climatización</span>
+            </div>
+            <div class="project-card-info">
+              <h3>Sistema Split Residencial</h3>
+              <p>Instalación de equipo con línea frigorífica oculta y retorno equilibrado.</p>
+            </div>
+          </article>
+
+          <!-- Proj 2 -->
+          <article class="project-corp-card reveal-item">
+            <div class="project-thumb-box">
+              <img
+                src="assets/images/refrigeracion.jpg"
+                alt="Instalación de refrigeración y cámaras de frío"
+                width="600"
+                height="450"
+                loading="lazy"
+              >
+              <span class="project-badge-tag">Refrigeración</span>
+            </div>
+            <div class="project-card-info">
+              <h3>Cámaras y Frío Comercial</h3>
+              <p>Instalación de evaporadores y circuito frigorífico para conservación de producto.</p>
+            </div>
+          </article>
+
+          <!-- Proj 3 -->
+          <article class="project-corp-card reveal-item">
+            <div class="project-thumb-box">
+              <img
+                src="assets/images/mantenimiento.jpg"
+                alt="Mantenimiento técnico preventivo con manómetros"
+                width="600"
+                height="450"
+                loading="lazy"
+              >
+              <span class="project-badge-tag">Mantenimiento</span>
+            </div>
+            <div class="project-card-info">
+              <h3>Revisión & Diagnóstico Técnico</h3>
+              <p>Control de parámetros de presión y consumo en equipos de refrigeración exterior.</p>
+            </div>
+          </article>
+
+          <!-- Proj 4 -->
+          <article class="project-corp-card reveal-item">
+            <div class="project-thumb-box">
+              <img
+                src="assets/images/proyecto-exterior.jpg"
+                alt="Unidades exteriores de climatización en cubierta"
+                width="600"
+                height="450"
+                loading="lazy"
+              >
+              <span class="project-badge-tag">Instalación</span>
+            </div>
+            <div class="project-card-info">
+              <h3>Bancada Técnica Exterior</h3>
+              <p>Montaje de condensadoras sobre amortiguadores técnicos antivibración en cubierta.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         17 — CTA Comercial ("¿Necesitas una solución para tu instalación?")
+         ======================================================================= -->
+    <section class="cta-commercial-band" aria-labelledby="cta-title">
+      <div class="container" style="text-align: center;">
+        <span class="eyebrow-badge white" style="justify-content: center;">
+          Atención Directa · Tarragona
+        </span>
+        <h2 class="h2-section" id="cta-title">
+          ¿Necesitas una solución para tu instalación?
+        </h2>
+        <p>
+          Cuéntanos qué necesitas y estudiaremos la solución más adecuada para tu proyecto, ya sea climatización, refrigeración comercial o mantenimiento técnico.
+        </p>
+
+        <div class="cta-band-actions">
+          <a href="#contacto" class="btn btn-accent">
+            <span>Solicitar presupuesto</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="https://wa.me/?text=Hola%20Instalaciones%20AXA,%20tengo%20un%20proyecto%20de%20instalación" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            <span>WhatsApp directo</span>
+          </a>
+          <a href="#contacto" class="btn btn-ghost-white">
+            <span>Contactar</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         18 — Contacto & Formulario Estructurado
+         ======================================================================= -->
+    <section class="section-pad" id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="eyebrow-badge">Respuesta Rápida</span>
+          <h2 class="h2-section" id="contact-heading">
+            Contactar con Instalaciones AXA
+          </h2>
+          <p class="text-lead">
+            Solicite presupuesto o asistencia técnica completando el formulario o contactándonos directamente a través de nuestros canales oficiales.
+          </p>
+        </div>
+
+        <div class="contact-section-grid">
+          <!-- Canales Oficiales -->
+          <div class="contact-channels-card reveal-item">
+            <span class="eyebrow-badge">Canales de atención</span>
+            <h3 class="h3-title" style="margin-bottom: 1.5rem;">Información de contacto</h3>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
               </div>
-              <div class="contact-info-text">
-                <strong>Ubicación</strong>
-                <p>Rambla Nova 124<br>43001 Tarragona, España</p>
+              <div class="channel-text-wrap">
+                <strong>Ubicación & Sede</strong>
+                <p>Rambla Nova 124, 43001 Tarragona, España</p>
+                <span style="font-size: 13px; color: var(--slate-500);">Zona de servicio: Tarragona y comarcas</span>
               </div>
             </div>
 
-            <div class="contact-info-item">
-              <div class="contact-info-icon">
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap whatsapp">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+              </div>
+              <div class="channel-text-wrap">
+                <strong>WhatsApp Técnico</strong>
+                <a href="https://wa.me/?text=Hola%20Instalaciones%20AXA,%20necesito%20asistencia%20técnica" target="_blank" rel="noopener noreferrer" style="color: var(--whatsapp-dark);">
+                  Mensaje directo por WhatsApp
+                </a>
+                <span style="font-size: 13px; color: var(--slate-500); display: block;">Respuesta rápida para consultas</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
                 </svg>
               </div>
-              <div class="contact-info-text">
-                <strong>Instagram</strong>
+              <div class="channel-text-wrap">
+                <strong>Instagram Oficial</strong>
                 <a href="https://www.instagram.com/instalaciones_axa/" target="_blank" rel="noopener noreferrer">
                   @instalaciones_axa
                 </a>
+                <span style="font-size: 13px; color: var(--slate-500); display: block;">Actualidad de proyectos e intervenciones</span>
               </div>
             </div>
-          </aside>
 
-          <!-- Form Wrap -->
-          <div class="contact-form-wrap">
-            <form class="contact-form" id="contact-form" novalidate>
-              <div class="form-group">
-                <label for="name">Nombre</label>
-                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Tu nombre">
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="channel-text-wrap">
+                <strong>Horario de atención</strong>
+                <p>Lunes a Viernes: 8:00 – 19:00</p>
+                <span style="font-size: 13px; color: var(--slate-500);">Asistencia técnica bajo cita previa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario Estructurado -->
+          <div class="contact-form-wrap reveal-item">
+            <form class="corp-form" id="corp-contact-form" novalidate>
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="contact-name">Nombre y Apellidos *</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    required
+                    placeholder="Ej. Carlos Martínez"
+                  >
+                </div>
+                <div class="form-field">
+                  <label for="contact-company">Empresa / Razón Social</label>
+                  <input
+                    type="text"
+                    id="contact-company"
+                    name="company"
+                    placeholder="Opcional (si aplica)"
+                  >
+                </div>
               </div>
 
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="phone">Teléfono</label>
-                  <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Número de contacto">
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="contact-phone">Teléfono de Contacto *</label>
+                  <input
+                    type="tel"
+                    id="contact-phone"
+                    name="phone"
+                    required
+                    placeholder="Ej. 612 345 678"
+                  >
                 </div>
-
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" autocomplete="email" required placeholder="tu@email.com">
+                <div class="form-field">
+                  <label for="contact-email">Correo Electrónico *</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    required
+                    placeholder="carlos@empresa.es"
+                  >
                 </div>
               </div>
 
-              <div class="form-group">
-                <label for="service">Servicio</label>
-                <select id="service" name="service" required>
-                  <option value="">Selecciona un servicio</option>
-                  <option value="climatizacion">Climatización</option>
-                  <option value="electricidad">Electricidad</option>
-                  <option value="fontaneria">Fontanería</option>
-                  <option value="otro">Otro</option>
+              <div class="form-field">
+                <label for="contact-service">Servicio Requerido *</label>
+                <select id="contact-service" name="service" required>
+                  <option value="" disabled selected>Seleccione el servicio o necesidad</option>
+                  <option value="climatizacion">Climatización (Aire acondicionado / Bomba calor)</option>
+                  <option value="refrigeracion">Refrigeración (Cámaras / Frío comercial)</option>
+                  <option value="mantenimiento">Mantenimiento preventivo / correctivo</option>
+                  <option value="reparacion">Reparación / Asistencia ante avería</option>
+                  <option value="instalaciones">Instalación integral nueva / Reforma</option>
+                  <option value="otro">Otras consultas técnicas</option>
                 </select>
               </div>
 
-              <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Describe brevemente qué instalación o consulta necesitas..."></textarea>
+              <div class="form-field">
+                <label for="contact-message">Descripción de la Instalación o Incidencia *</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Explique las características del espacio, tipo de equipo o avería observada..."
+                ></textarea>
               </div>
 
-              <button type="submit" class="button button-primary">
-                Solicitar información
-              </button>
+              <div class="form-checkbox-label">
+                <input type="checkbox" id="privacy-consent" name="privacy" required>
+                <label for="privacy-consent">
+                  He leído y acepto la política de privacidad y el tratamiento de mis datos para la gestión de este presupuesto o solicitud de servicio.
+                </label>
+              </div>
 
-              <div class="contact-notice" id="contact-notice" role="status"></div>
+              <div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding-block: 1rem;">
+                  <span>Solicitar presupuesto</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+
+              <div class="form-feedback-alert" id="form-feedback" role="status"></div>
             </form>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
-         10. Final CTA
-         ======================================================================= -->
-    <section class="final-cta" id="cta" aria-labelledby="cta-title">
-      <div class="container">
-        <span class="eyebrow" style="color: #e0e3f5;">Instalaciones AXA</span>
-        <h2 id="cta-title">¿Tienes una instalación pendiente?</h2>
-        <p>Cuéntanos qué necesitas y descubre cómo podemos ayudarte.</p>
-        <div class="final-cta-actions">
-          <a href="#contacto" class="button button-white">Solicitar presupuesto</a>
-          <a href="#servicios" class="button button-outline-white">Ver servicios</a>
         </div>
       </div>
     </section>
@@ -899,74 +979,128 @@
   </main>
 
   <!-- =========================================================================
-       11. Footer
+       19 — Footer Corporativo
        ========================================================================= -->
-  <footer class="site-footer">
+  <footer class="corp-footer">
     <div class="container">
-      <div class="footer-grid">
-        <!-- Col 1: Brand & Services -->
-        <div class="footer-brand">
-          <img src="assets/logo/logo-instalaciones-axa-white.svg" alt="Instalaciones AXA" width="220" height="38">
-          <p class="footer-title">Especialidades</p>
-          <ul class="footer-links">
-            <li><a href="#climatizacion">Climatización</a></li>
-            <li><a href="#electricidad">Electricidad</a></li>
-            <li><a href="#fontaneria">Fontanería</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 2: Navigation -->
+      <div class="corp-footer-grid">
+        <!-- Col 1: Brand & Bio -->
         <div>
-          <p class="footer-title">Navegación</p>
-          <ul class="footer-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#por-que-axa">Nosotros</a></li>
-            <li><a href="#proceso">Cómo trabajamos</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#zonas">Zonas</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Location -->
-        <div>
-          <p class="footer-title">Ubicación</p>
-          <address class="footer-address">
-            <strong>INSTALACIONES AXA</strong>
-            Rambla Nova 124<br>
-            43001 Tarragona<br>
-            España
-          </address>
-        </div>
-
-        <!-- Col 4: Social -->
-        <div>
-          <p class="footer-title">Síguenos</p>
+          <img
+            src="assets/logo/logo-instalaciones-axa-white.svg"
+            alt="Instalaciones AXA"
+            width="220"
+            height="38"
+            style="margin-bottom: 1.5rem;"
+          >
+          <p style="color: #94A3B8; font-size: 14px; line-height: 1.65; max-width: 320px; margin-bottom: 1.5rem;">
+            Empresa especializada en soluciones técnicas de climatización, refrigeración, mantenimiento preventivo e instalaciones profesionales en Tarragona.
+          </p>
           <a
             href="https://www.instagram.com/instalaciones_axa/"
             target="_blank"
             rel="noopener noreferrer"
-            class="footer-instagram"
-            aria-label="Seguir a Instalaciones AXA en Instagram"
+            class="badge-tag dark"
+            style="text-transform: none; font-size: 13px;"
           >
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24" style="width: 14px; height: 14px;" aria-hidden="true">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
             </svg>
             <span>@instalaciones_axa</span>
           </a>
         </div>
+
+        <!-- Col 2: Servicios -->
+        <div>
+          <h4 class="footer-col-h4">Servicios</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#climatizacion">Climatización</a></li>
+            <li><a href="#refrigeracion">Refrigeración</a></li>
+            <li><a href="#mantenimiento">Mantenimiento</a></li>
+            <li><a href="#servicios">Instalaciones</a></li>
+            <li><a href="#servicios">Reparaciones</a></li>
+            <li><a href="#servicios">Asistencia técnica</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Empresa -->
+        <div>
+          <h4 class="footer-col-h4">Empresa</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#empresa">Sobre nosotros</a></li>
+            <li><a href="#servicios">Servicios técnicos</a></li>
+            <li><a href="#proyectos">Proyectos ejecutados</a></li>
+            <li><a href="#contacto">Contacto y Sede</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contacto & Sede -->
+        <div>
+          <h4 class="footer-col-h4">Sede y Contacto</h4>
+          <ul class="footer-nav-list">
+            <li><span>Rambla Nova 124</span></li>
+            <li><span>43001 Tarragona, España</span></li>
+            <li style="margin-top: 0.5rem;">
+              <a href="#contacto" style="color: #60A5FA; font-weight: 700;">
+                Solicitar presupuesto →
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/?text=Hola%20Instalaciones%20AXA,%20tengo%20una%20consulta" target="_blank" rel="noopener noreferrer" style="color: var(--whatsapp-green);">
+                Atención por WhatsApp →
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 Instalaciones AXA. Todos los derechos reservados.</p>
-        <p>Tarragona · Climatización, Electricidad y Fontanería</p>
+      <div class="footer-bottom-bar">
+        <p>© 2026 Instalaciones AXA. Todos los derechos reservados. Tarragona.</p>
+        <div class="footer-credit" style="color: rgba(255,255,255,0.7); font-size: 13px; display: inline-flex; align-items: center; gap: 6px;">
+          <span>Diseño y desarrollo web por</span>
+          <strong style="color: #ffffff; background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(255,255,255,0.15);">Mango Digital</strong>
+        </div>
+        <div class="footer-legal-links">
+          <a href="#aviso-legal" class="legal-modal-trigger" data-modal="aviso-legal">Aviso Legal</a>
+          <a href="#privacidad" class="legal-modal-trigger" data-modal="privacidad">Política de Privacidad</a>
+          <a href="#cookies" class="legal-modal-trigger" data-modal="cookies">Política de Cookies</a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <!-- =========================================================================
+       34 — Mobile Bottom Bar (Acción Rápida & Directa)
+       ========================================================================= -->
+  <aside class="mobile-bottom-bar" aria-label="Acceso rápido de contacto móvil">
+    <a href="#contacto" class="mobile-bottom-action">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span>Contactar</span>
+    </a>
+    <a href="https://wa.me/?text=Hola%20Instalaciones%20AXA,%20solicito%20asistencia%20técnica" class="mobile-bottom-action whatsapp" target="_blank" rel="noopener noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#contacto" class="mobile-bottom-action accent">
+      <span>Presupuesto</span>
+    </a>
+  </aside>
+
+  <!-- Legal Modal Accessible Dialog -->
+  <dialog id="legal-dialog" style="max-width: 680px; width: 90%; margin: auto; padding: 2rem; border-radius: 8px; border: 1px solid var(--grey-border); background: var(--white); box-shadow: var(--shadow-lg);">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--grey-border);">
+      <h3 id="legal-dialog-title" class="h3-title" style="margin: 0;">Información Legal</h3>
+      <button type="button" id="close-legal-dialog" style="background: none; border: none; font-size: 24px; cursor: pointer; color: var(--slate-500);">&times;</button>
+    </div>
+    <div id="legal-dialog-content" style="font-size: 15px; color: var(--slate-600); line-height: 1.7; max-height: 60vh; overflow-y: auto;">
+      <!-- Populated via main.js -->
+    </div>
+  </dialog>
 
   <!-- Vanilla JavaScript -->
   <script src="js/main.js"></script>

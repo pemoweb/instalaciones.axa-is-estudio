@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 54" width="280" height="54" fill="none">
+  <!-- Geometric Emblem / Triad Badge representing Climatización, Electricidad, Fontanería -->
+  <rect x="2" y="2" width="50" height="50" rx="12" fill="#F2F4FF" stroke="#0B116B" stroke-width="3"/>
+  <!-- Precision Vertex AXA lines -->
+  <path d="M15 39L27 15L39 39" stroke="#0B116B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M19.5 31H34.5" stroke="#0B116B" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="27" cy="23" r="2.8" fill="#0B116B"/>
+
+  <!-- Official Typography: INSTALACIONES AXA -->
+  <text x="68" y="21" fill="#4A5073" font-family="'Figtree', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="0.24em">INSTALACIONES</text>
+  <text x="67" y="44" fill="#0B116B" font-family="'Figtree', -apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800" letter-spacing="-0.03em">AXA</text>
+</svg>
