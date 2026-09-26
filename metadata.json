@@ -1,0 +1,6 @@
+{
+  "name": "Instalaciones AXA — Climatización, Electricidad y Fontanería",
+  "description": "Instalaciones AXA en Tarragona. Servicios profesionales de climatización, electricidad y fontanería.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
