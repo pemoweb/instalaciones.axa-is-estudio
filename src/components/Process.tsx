@@ -1,7 +1,13 @@
 import React from "react";
 import { MessageSquare, ClipboardCheck, FileCheck, Wrench } from "lucide-react";
+import { useCardReveal } from "../hooks/useCardReveal";
 
 export const Process: React.FC = () => {
+  const { containerRef, revealedIndices } = useCardReveal({
+    threshold: 0.15,
+    rootMargin: "0px 0px -40px 0px",
+  });
+
   const steps = [
     {
       number: "01",
@@ -44,13 +50,26 @@ export const Process: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative">
+        <div
+          ref={containerRef}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative"
+        >
           {steps.map((step, idx) => {
+            const isRevealed = revealedIndices.has(idx);
             const Icon = step.icon;
             return (
               <div
                 key={step.number}
-                className="relative rounded-2xl p-7 bg-[#f5f6fa]/70 border border-[#e5e7eb] flex flex-col justify-between"
+                data-reveal-card
+                data-index={idx}
+                style={{
+                  transitionDelay: `${(idx % 4) * 90}ms`,
+                }}
+                className={`relative rounded-2xl p-7 bg-[#f5f6fa]/70 border border-[#e5e7eb] flex flex-col justify-between transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                  isRevealed
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-6 pointer-events-none"
+                }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">

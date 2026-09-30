@@ -50,7 +50,7 @@ function initMobileNavigation() {
 // 3. Navigation Active State on Scroll
 function initActiveNav() {
   const sections = document.querySelectorAll("main > section[id]");
-  const navLinks = document.querySelectorAll(".nav-main a[href^='#']");
+  const navLinks = document.querySelectorAll(".nav-main a[href^='#'], .mobile-drawer a.mobile-link[href^='#']");
   if (!sections.length || !navLinks.length) return;
 
   const observer = new IntersectionObserver(
@@ -60,7 +60,13 @@ function initActiveNav() {
           const id = entry.target.getAttribute("id");
           navLinks.forEach((link) => {
             const href = link.getAttribute("href");
-            link.classList.toggle("active", href === `#${id}`);
+            const isActive = (href === `#${id}`);
+            link.classList.toggle("active", isActive);
+            if (isActive) {
+              link.setAttribute("aria-current", "page");
+            } else {
+              link.removeAttribute("aria-current");
+            }
           });
         }
       });
@@ -88,29 +94,36 @@ function initServicePreselection() {
 
 // 5. Scroll Reveal Animation using IntersectionObserver
 function initScrollReveal() {
-  if (!("IntersectionObserver" in window)) {
-    document.querySelectorAll(".reveal-item").forEach((el) => el.classList.add("is-visible"));
-    return;
-  }
-
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    document.querySelectorAll(".reveal-item").forEach((el) => el.classList.add("is-visible"));
-    return;
-  }
-
-  const revealElements = document.querySelectorAll(".reveal-item");
+  const revealElements = document.querySelectorAll(".reveal-item, .process-step-item");
   if (!revealElements.length) return;
+
+  if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    revealElements.forEach((el) => {
+      el.classList.add("is-visible");
+      el.classList.add("is-revealed");
+    });
+    return;
+  }
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+        const target = entry.target;
+        const parent = target.parentElement;
+        if (parent) {
+          const siblings = Array.from(parent.children);
+          const index = siblings.indexOf(target);
+          target.style.transitionDelay = `${(index % 5) * 90}ms`;
+        }
+        target.classList.add("is-visible");
+        target.classList.add("is-revealed");
+        observer.unobserve(target);
       });
     },
     {
       threshold: 0.12,
+      rootMargin: "0px 0px -40px 0px",
     }
   );
 

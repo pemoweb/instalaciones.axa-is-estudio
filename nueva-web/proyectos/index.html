@@ -62,7 +62,7 @@
         <a href="../servicios/" class="nav-link">Servicios</a>
         <a href="../servicios/climatizacion/" class="nav-link">Climatización</a>
         <a href="../servicios/refrigeracion/" class="nav-link">Refrigeración</a>
-        <a href="index.html" class="nav-link active">Proyectos</a>
+        <a href="index.html" class="nav-link active" aria-current="page">Proyectos</a>
         <a href="../contacto/" class="nav-link">Contacto</a>
       </nav>
 
@@ -97,7 +97,7 @@
         <a href="../servicios/fontaneria/" class="mobile-nav-sublink">Fontanería</a>
         <a href="../servicios/mantenimiento/" class="mobile-nav-sublink">Mantenimiento</a>
       </div>
-      <a href="index.html" class="mobile-nav-link">Proyectos</a>
+      <a href="index.html" class="mobile-nav-link active" aria-current="page">Proyectos</a>
       <a href="../contacto/" class="mobile-nav-link">Contacto</a>
     </div>
   </div>
@@ -146,11 +146,13 @@
           <!-- Item 1 Clima -->
           <article class="project-item" data-category="clima">
             <div class="project-img-wrap">
-              <img src="../assets/images/project_work_tarragona_1790434028080.jpg" alt="Instalación de climatización por conductos en Tarragona">
+              <a href="show.html">
+                <img src="../assets/images/project_work_tarragona_1790434028080.jpg" alt="Instalación de climatización por conductos en Tarragona">
+              </a>
               <span class="project-meta-pill">Climatización · Tarragona</span>
             </div>
             <div class="project-body">
-              <h2 class="project-title">Sistema de Climatización Centralizada en Inmueble</h2>
+              <h2 class="project-title"><a href="show.html" style="color:inherit;text-decoration:none;">Sistema de Climatización Centralizada en Inmueble</a></h2>
               <p class="project-loc">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 Rambla Nova / Centro, Tarragona
@@ -158,8 +160,12 @@
               <p style="font-size:0.92rem;color:var(--text-muted);margin-bottom:1rem;">
                 Montaje de bomba de calor Inverter con red de conductos de fibra aislada, difusión mediante toberas y retorno por falso techo plenum.
               </p>
-              <div style="font-family:var(--font-mono);font-size:0.8rem;color:var(--axa-blue);font-weight:700;">
-                Potencia: 14 kW · SEER 6.8 · Gas R-32
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border-color);">
+                <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--axa-blue);font-weight:700;">Potencia: 14 kW · SEER 6.8 · R-32</span>
+                <a href="show.html" class="link-arrow" style="font-size:0.85rem;font-weight:700;">
+                  <span>Ver ficha técnica</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
               </div>
             </div>
           </article>
@@ -167,11 +173,13 @@
           <!-- Item 2 Frío -->
           <article class="project-item" data-category="frio">
             <div class="project-img-wrap">
-              <img src="../assets/images/proyecto-exterior.jpg" alt="Unidades condensadoras para cámaras de frío">
+              <a href="show.html">
+                <img src="../assets/images/proyecto-exterior.jpg" alt="Unidades condensadoras para cámaras de frío">
+              </a>
               <span class="project-meta-pill">Refrigeración · Polígono Francolí</span>
             </div>
             <div class="project-body">
-              <h2 class="project-title">Central Frigorífica para Almacén de Alimentación</h2>
+              <h2 class="project-title"><a href="show.html" style="color:inherit;text-decoration:none;">Central Frigorífica para Almacén de Alimentación</a></h2>
               <p class="project-loc">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 Polígono Francolí, Tarragona
@@ -179,8 +187,12 @@
               <p style="font-size:0.92rem;color:var(--text-muted);margin-bottom:1rem;">
                 Instalación de batería de unidades condensadoras silenciosas sobre bancada antivibratoria para servicio de frío positivo en 2 cámaras de 120 m³.
               </p>
-              <div style="font-family:var(--font-mono);font-size:0.8rem;color:var(--axa-blue);font-weight:700;">
-                Régimen: +2°C / +4°C · Desescarche Eléctrico
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border-color);">
+                <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--axa-blue);font-weight:700;">Régimen: +2°C / +4°C</span>
+                <a href="show.html" class="link-arrow" style="font-size:0.85rem;font-weight:700;">
+                  <span>Ver ficha técnica</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
               </div>
             </div>
           </article>
@@ -188,11 +200,13 @@
           <!-- Item 3 Electricidad -->
           <article class="project-item" data-category="elec">
             <div class="project-img-wrap">
-              <img src="../assets/images/service_electrical_panel_1790434004977.jpg" alt="Cuadro eléctrico general de mando y protección">
+              <a href="show.html">
+                <img src="../assets/images/service_electrical_panel_1790434004977.jpg" alt="Cuadro eléctrico general de mando y protección">
+              </a>
               <span class="project-meta-pill">Electricidad · Tarragona</span>
             </div>
             <div class="project-body">
-              <h2 class="project-title">Cuadro General de Mando y Protección (CGMP)</h2>
+              <h2 class="project-title"><a href="show.html" style="color:inherit;text-decoration:none;">Cuadro General de Mando y Protección (CGMP)</a></h2>
               <p class="project-loc">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 Vila-seca / Tarragona
@@ -200,8 +214,12 @@
               <p style="font-size:0.92rem;color:var(--text-muted);margin-bottom:1rem;">
                 Renovación completa de cuadro con protecciones magnetotérmicas Schneider, diferenciales superinmunizados y descargador de sobretensiones.
               </p>
-              <div style="font-family:var(--font-mono);font-size:0.8rem;color:var(--axa-blue);font-weight:700;">
-                Normativa REBT · 400V Trifásica · 35 kW
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border-color);">
+                <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--axa-blue);font-weight:700;">REBT · 400V Trifásica</span>
+                <a href="show.html" class="link-arrow" style="font-size:0.85rem;font-weight:700;">
+                  <span>Ver ficha técnica</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
               </div>
             </div>
           </article>

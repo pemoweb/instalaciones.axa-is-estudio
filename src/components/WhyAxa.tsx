@@ -1,7 +1,13 @@
 import React from "react";
 import { UserCheck, Sliders, ShieldCheck, MapPin } from "lucide-react";
+import { useCardReveal } from "../hooks/useCardReveal";
 
 export const WhyAxa: React.FC = () => {
+  const { containerRef, revealedIndices } = useCardReveal({
+    threshold: 0.15,
+    rootMargin: "0px 0px -40px 0px",
+  });
+
   const values = [
     {
       index: "01",
@@ -48,13 +54,26 @@ export const WhyAxa: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {values.map((val) => {
+        <div
+          ref={containerRef}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+        >
+          {values.map((val, idx) => {
+            const isRevealed = revealedIndices.has(idx);
             const Icon = val.icon;
             return (
               <div
                 key={val.index}
-                className="rounded-2xl p-7 bg-[#f5f6fa]/60 border border-[#e5e7eb] hover:border-[#0B116B] transition-all duration-200 flex flex-col justify-between group"
+                data-reveal-card
+                data-index={idx}
+                style={{
+                  transitionDelay: `${(idx % 4) * 90}ms`,
+                }}
+                className={`rounded-2xl p-7 bg-[#f5f6fa]/60 border border-[#e5e7eb] hover:border-[#0B116B] flex flex-col justify-between group transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                  isRevealed
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-6 pointer-events-none"
+                }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
